@@ -44,10 +44,8 @@
             </div>
           </header>
           <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-            <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
-            <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">assignment</i>Plan</a>
-            <div class="mdl-layout-spacer"></div>
-            <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+            <router-link class="mdl-navigation__link" to="/"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</router-link>
+            <router-link class="mdl-navigation__link"  to="/order-plan"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">assignment</i>Plan</router-link>
           </nav>
         </div>
         <main class="mdl-layout__content mdl-color--grey-100">
@@ -58,7 +56,7 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 export default {
   name: 'app'
 }

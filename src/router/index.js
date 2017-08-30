@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Yolo from '@/components/Yolo'
+import OrderForm from '@/components/OrderForm'
 import Home from '@/components/Home'
 
 Vue.use(Router)
@@ -13,9 +13,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/yolo',
-      name: 'yolo',
-      component: Yolo
+      path: '/order-form',
+      name: 'order-form',
+      component: OrderForm
     }
   ]
 })
