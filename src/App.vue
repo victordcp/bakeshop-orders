@@ -5,7 +5,7 @@
       <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
           <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title">Home</span>
+            <span class="mdl-layout-title"></span>
             <div class="mdl-layout-spacer"></div>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
               <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
@@ -30,12 +30,12 @@
           <header class="demo-drawer-header">
             <!-- <img src="images/user.jpg" class="demo-avatar"> -->
             <div class="demo-avatar-dropdown">
-              <span>Victor De Col Poltronieri</span>
-              <div class="mdl-layout-spacer"></div>
+              <span>Poltronieri</span>
+              <!-- <div class="mdl-layout-spacer"></div>
               <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
                 <i class="material-icons" role="presentation">arrow_drop_down</i>
                 <span class="visuallyhidden">Accounts</span>
-              </button>
+              </button> -->
               <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
                 <li class="mdl-menu__item">hello@example.com</li>
                 <li class="mdl-menu__item">info@example.com</li>
@@ -44,8 +44,8 @@
             </div>
           </header>
           <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-            <router-link class="mdl-navigation__link" to="/"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</router-link>
-            <router-link class="mdl-navigation__link"  to="/order-plan"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">assignment</i>Plan</router-link>
+            <!-- <router-link class="mdl-navigation__link" to="/order-form"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">assignment</i>Pedidos</router-link> -->
+            <router-link class="mdl-navigation__link" to="/"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Estagiário</router-link>
           </nav>
         </div>
         <main class="mdl-layout__content mdl-color--grey-100">
@@ -84,7 +84,7 @@ header {
   margin: 0;
   height: 56px;
   padding: 0 16px 0 24px;
-  background-color: #35495E;
+  /* background-color: #35495E; */
   color: #ffffff;
 }
 
@@ -97,5 +97,8 @@ header span {
   font-weight: 400;
   box-sizing: border-box;
   padding-top: 16px;
+}
+.mdl-layout__header .mdl-layout__drawer-button {
+  color: #37474f;
 }
 </style>
