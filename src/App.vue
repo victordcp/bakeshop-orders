@@ -70,17 +70,6 @@ html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
-.mdl-layout__content {
-    overflow-y:hidden;
-    ::-webkit-scrollbar { display: none; }
-}
-
-@media only screen and (max-width:960px){
-    .mdl-layout__content {
-        overflow-y:scroll;
-    }
-}
-
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
