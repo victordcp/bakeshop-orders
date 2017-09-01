@@ -5,8 +5,11 @@ import App from './App'
 import router from './router'
 import 'material-design-lite/material.min.css'
 import 'material-design-lite/material.min.js'
+import VueFire from 'vuefire'
 
 Vue.config.productionTip = false
+
+Vue.use(VueFire)
 
 /* eslint-disable no-new */
 new Vue({

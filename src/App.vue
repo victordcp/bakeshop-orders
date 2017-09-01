@@ -4,7 +4,7 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
       <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <header class="mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
-          <div class="mdl-layout__header-row">
+          <!-- <div class="mdl-layout__header-row">
             <span class="mdl-layout-title"></span>
             <div class="mdl-layout-spacer"></div>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
@@ -24,7 +24,7 @@
               <li class="mdl-menu__item">Contact</li>
               <li class="mdl-menu__item">Legal information</li>
             </ul>
-          </div>
+          </div> -->
         </header>
         <div class="mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
           <header>
