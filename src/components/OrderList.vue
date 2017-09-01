@@ -15,7 +15,7 @@
                   </span>
                 </div>
                 <span class="mdl-cell mdl-cell--1-col">
-                  <a href="#"><i class="material-icons mdl-color-text--grey">delete</i></a>
+                  <a href="#" v-on:click="removeOrder(name)"><i class="material-icons mdl-color-text--grey">delete</i></a>
                 </span>
                 <span class="mdl-cell--12-col">
                   {{ stringAgg(user.order) }}
@@ -54,6 +54,8 @@
 </template>
 
 <script>
+import Vue from 'vue'
+
 export default {
   name: 'order-list',
   data: function () {
@@ -84,6 +86,11 @@ export default {
     },
     formatNum: function (num, prefixo) {
       return prefixo + ' ' + (num || 0).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+,)/g, '$1.')
+    },
+    removeOrder: function (order) {
+      // delete this.orders[order]
+      Vue.delete(this.orders, order)
+      console.log(this.orders)
     }
   }
 }
